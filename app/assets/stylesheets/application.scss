@@ -1,0 +1,143 @@
+/*
+*= require jquery-ui
+*/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "variables";
+@import "font-awesome";
+@import "welcome";
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-default {
+    background-color: rgba(255, 255, 255, .7);
+    border-color: $orange !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Indie Flower', cursive;
+  padding-top: 25px;
+  font-size: 18px;
+  color: $cranberry-neez;
+
+  &:hover {
+    color: $orange;
+  };
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: $cranberry-neez;
+  color: $cranberry-neez;
+  margin-top: 7px;
+}
+
+.logo {
+    background-image: image_url("qushneez_Final.svg");
+    background-position: 0 0;
+    background-size: 228px 45px;
+    width: 228px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+  }
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.orange {
+  color: #FF851B;
+}
+
+.grey {
+  color: #aaa;
+}
+
+.handwritting {
+  font-family: 'Indie Flower', cursive;
+}
+
+.social-padding {
+  padding-right: 2rem;
+}
+
+.btn-cranberry {
+  color: $cranberry-neez;
+  border-color: $cranberry-neez;
+  margin-top: 7px;
+  background-color: transparent;
+
+  &:hover {
+    color: #FFFFFF;
+    border-color: $cranberry-neez;
+    background-color: $cranberry-neez;
+  };
+
+  &:active {
+    color: #FFFFFF;
+    border-color: $cranberry-neez;
+    background-color: $cranberry-neez;
+  };
+
+  &:focus {
+    color: #FFFFFF;
+    border-color: $orange;
+    background-color: $orange;
+  };
+}
+
+.footer-background {
+  padding-top: 5rem;
+  background-color: darken($cranberry-neez, 13%);
+}
+
+@media (max-width: 767px) {
+  .navbar-default {
+    background-color: rgba(255, 255, 255, .9);
+
+}
+}
+
+
+

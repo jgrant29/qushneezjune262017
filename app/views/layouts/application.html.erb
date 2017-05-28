@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag('favicon.ico') %>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <title>qushneez | spontaneous playwear for kids</title>
+
+
+  </head>
+
+  <body>
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="/"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Our Story", welcome_about_path %></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your email address">
+            </div>
+            <button type="submit" class="btn btn-default btn-cranberry">Join us</button>
+          </form>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    <%= yield %>
+  <footer>
+    <div class="container-fluid footer-background grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="text-center">Questions?  We are here for you.</p>
+            <hr>
+            <address>
+              <strong>qushneez, LLC.</strong><br>
+              <%= fa_icon "map-marker" %>  1234 Market Street, San Francisco, CA 94103<br>
+              <%= fa_icon "phone" %>  (415) 269-8921
+            </address>
+            <address>
+            <strong>Samantha Ford</strong><br>
+            <a href="mailto:samstevens@msn.com">samstevens@msn.com</a>
+          </address>
+          <%= fa_icon "cc-visa 2x", class: "grey" %> <%= fa_icon "cc-mastercard 2x", class: "grey" %> <%= fa_icon "cc-discover 2x", class: "grey" %> <%= fa_icon "cc-amex 2x", class: "grey" %>
+          </div>
+          <div class="col-md-4">
+            <p class="text-center">Our Story</p>
+            <hr>
+            <p>We are blessed to be living and raising our children in Northern California.  We live close to the beach, the mountains for skiing, and are surrounded by beautiful trails where we love to hike and bike.  I’d say we are a pretty active family. We love to spend time outdoors and from the earliest of ages we encouraged our little boy to be active with us.  One of our favorite activities was hiking. While our outings were always fun, filled with lots of adventure, inevitably, our little boy would trip and fall, skin his knees, he would start crying and then want to head back home.  Adventure over! Same thing when we’d be playing and running around at the park.  Trip-fall-tears-repeat.  <%= link_to "More about our story", welcome_about_path %></p>
+          </div>
+          <div class="col-md-4">
+            <p class="text-center">Sign up!</p>
+            <hr>
+            <h4 class="orange">get instant updates about our new products and special promos!</h4>
+            <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your email address">
+            </div>
+            <button type="submit" class="btn btn-default btn-cranberry">Sign up</button>
+          </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container grey text-center">
+        <div class="col-md-12 line">
+          <h4 class="handwritting maroon">Follow us!</h4>
+          <span><%= fa_icon "facebook 2x", class: "maroon social-padding" %> <%= fa_icon "instagram 2x", class: "maroon social-padding" %><%= fa_icon "twitter 2x", class: "maroon social-padding" %><%= fa_icon "pinterest 2x", class: "maroon" %><span>
+          <br>
+          <br>
+          <small><%= fa_icon "copyright" %> 2017 qushneez LLC</small>
+          <br>
+          <h4 class="grey">qushneez</h4>
+          <small>spontaneous playwear for kids<%= fa_icon "trademark" %></small>
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

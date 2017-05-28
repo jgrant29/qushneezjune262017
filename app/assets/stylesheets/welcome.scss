@@ -1,0 +1,414 @@
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel-height {
+  height: 550px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 150px !important;
+  z-index: 10;
+  font-family: 'Indie Flower', cursive;
+}
+
+.caption-header-h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 55px;
+}
+
+.caption-header-p {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 200;
+  font-size: 24px !important;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-height .item {
+  height: 550px;
+}
+.carousel-inner > .item > img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 550px;
+}
+
+.carousel-indicators li {
+  border: 1px solid $cranberry-neez !important;
+}
+
+.carousel-indicators .active {
+  background-color: $cranberry-neez;
+}
+
+.carousel-indicators-2 li {
+  border: 1px solid $orange !important;
+}
+
+.carousel-indicators-2 .active {
+  background-color: $orange;
+}
+
+.carousel-inner-review {
+  min-height: 310px;
+}
+
+.first-slide {
+  background-attachment:fixed;
+  background-image: image_url("kid_1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.second-slide {
+  background-attachment:fixed;
+  background-image: image_url("kid_7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.third-slide {
+  background-attachment:fixed;
+  background-image: image_url("kid_3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.btn-signup {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  &:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: $orange;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:focus {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: $orange;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:active {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: $orange;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+}
+
+.btn-exclusive {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  &:hover {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:focus {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:active {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+}
+
+.btn-review {
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
+  border-radius: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  &:hover {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:focus {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+  &:active {
+    background-color: transparent;
+    color: $cranberry-neez;
+    border-color: $cranberry-neez;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif 
+  };
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+#review-area {
+  background-attachment:fixed;
+  background-image: image_url("kid_1.jpeg");
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+}
+
+.circle-review {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.review-text {
+  color: #000;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.review-background {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.featurette-divider {
+  padding: 80px 0;
+}
+
+.featurette-padding {
+
+}
+
+.font-icon-top {
+  color: #aaa;
+  margin-bottom: 3rem;
+  font-weight: 200; 
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.fa-trademark {
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.qushneez-kid {
+  background-color: #eee;
+  opacity: .9;
+  background-image: image_url("kid_fall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+}
+
+.featurette-image {
+  padding-top: 25%;
+}
+
+.qushnezz-trademark {
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  font-weight: 200;
+  margin-top: 15%;
+}
+
+.marketing-heading-maroon {
+  color: darken( $cranberry-neez, 30% ) 
+}
+
+.marketing-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.orange-featurette {
+  background-color: #0F6F7D;
+  color: #11DEFC;
+  padding-bottom: 10rem;
+}
+
+.featurette-heading-2 {
+  color: $cranberry-neez;
+}
+
+.featurette-heading-second {
+  color: $orange;
+  font-family: 'Indie Flower', cursive;
+}
+
+.featurette-spontaneous {
+  color: #ffffff;
+}
+
+.maroon {
+  color: $cranberry-neez;
+}
+
+.cranberry-background {
+  padding-top: 30px;
+  height: 300px;
+  background-color: $cranberry-neez;
+}
+
+.fa-building-o {
+  padding-top: 8%;
+  font-size: 15rem !important;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.about-us {
+  margin-top: 4rem;
+  padding: 7rem 0;
+}
+
+.kids-playing {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  img {
+  object-fit: cover;
+  width: 100%;
+  }
+
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+
+@media (max-width: 570px) {
+  .caption-header-h1 {
+    font-size: 35px;
+  }
+
+  .orange-featurette {
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
