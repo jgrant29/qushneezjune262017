@@ -11,6 +11,7 @@ end
   gem 'jquery-ui-rails'
   gem "jquery-slick-rails"
   gem 'material_icons'
+  gem "figaro"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
