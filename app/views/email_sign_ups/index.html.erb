@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Email Sign Ups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Notification</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @email_sign_ups.each do |email_sign_up| %>
+      <tr>
+        <td><%= email_sign_up.email %></td>
+        <td><%= email_sign_up.notification %></td>
+        <td><%= link_to 'Show', email_sign_up %></td>
+        <td><%= link_to 'Edit', edit_email_sign_up_path(email_sign_up) %></td>
+        <td><%= link_to 'Destroy', email_sign_up, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Email Sign Up', new_email_sign_up_path %>
