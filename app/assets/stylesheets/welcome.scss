@@ -74,6 +74,9 @@
   background-attachment:fixed;
   background-image: image_url("kid_7.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100%;
@@ -84,6 +87,9 @@
   background-attachment:fixed;
   background-image: image_url("kid_3.jpeg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
@@ -252,6 +258,9 @@
   background-attachment:fixed;
   background-image: image_url("kid_1.jpeg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center bottom;
   height: 100%;
 }
@@ -352,7 +361,7 @@
 
 .cranberry-background {
   padding-top: 30px;
-  height: 300px;
+  height: 400px;
   background-color: $cranberry-neez;
 }
 
