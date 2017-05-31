@@ -3,23 +3,13 @@ class EmailSignUpsController < ApplicationController
 
   # GET /email_sign_ups
   # GET /email_sign_ups.json
-  def index
-    @email_sign_ups = EmailSignUp.all
-  end
 
   # GET /email_sign_ups/1
   # GET /email_sign_ups/1.json
-  def show
-  end
 
   # GET /email_sign_ups/new
-  def new
-    @email_sign_up = EmailSignUp.new
-  end
 
   # GET /email_sign_ups/1/edit
-  def edit
-  end
 
   # POST /email_sign_ups
   # POST /email_sign_ups.json
@@ -28,11 +18,13 @@ class EmailSignUpsController < ApplicationController
 
     respond_to do |format|
       if @email_sign_up.save
-        format.html { redirect_to @email_sign_up, notice: 'Email sign up was successfully created.' }
         format.json { render :show, status: :created, location: @email_sign_up }
+        CrawlingSoonMailer.qushneez_email_notification(@email_sign_up).deliver_now
+        format.js   {flash[:notice] = "Thanks for signing up!  Check your email for updates."}
       else
         format.html { render :new }
         format.json { render json: @email_sign_up.errors, status: :unprocessable_entity }
+        format.js   {flash[:error] = "We already have your email on file.  If you think this is an error, please contact us."}
       end
     end
   end

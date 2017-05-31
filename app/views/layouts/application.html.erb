@@ -36,15 +36,12 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><%= link_to "Our Story", welcome_about_path %></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to "Shop", welcome_shop_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your email address">
-            </div>
-            <button type="submit" class="btn btn-default btn-cranberry">Join us</button>
-          </form>
+          <div class="navbar-form navbar-left">
+            <button class= "btn btn-default btn-cranberry-top"><%= link_to "Get started", welcome_shop_path %></button>
+          </div>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -59,7 +56,7 @@
             <hr>
             <address>
               <strong>qushneez, LLC.</strong><br>
-              <%= fa_icon "map-marker" %>  1234 Market Street, San Francisco, CA 94103<br>
+              <%= fa_icon "map-marker" %>San Francisco, CA<br>
               <%= fa_icon "phone" %>  (415) 269-8921
             </address>
             <address>
@@ -77,11 +74,9 @@
             <p class="text-center">Sign up!</p>
             <hr>
             <h4 class="orange">get instant updates about our new products and special promos!</h4>
-            <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your email address">
+            <div class="navbar-form navbar-left">
+              <%= render "/email_sign_ups/remote_form" %>
             </div>
-            <button type="submit" class="btn btn-default btn-cranberry">Sign up</button>
           </form>
           </div>
         </div>
@@ -90,9 +85,8 @@
       <div class="container grey text-center">
         <div class="col-md-12 line">
           <h4 class="handwritting maroon">Follow us!</h4>
-          <span><%= fa_icon "facebook 2x", class: "maroon social-padding" %> <%= fa_icon "instagram 2x", class: "maroon social-padding" %><%= fa_icon "twitter 2x", class: "maroon social-padding" %><%= fa_icon "pinterest 2x", class: "maroon" %><span>
-          <br>
-          <br>
+          <span><%= fa_icon "facebook 2x", class: "maroon social-padding" %> <%= fa_icon "instagram 2x", class: "maroon social-padding" %><span>
+          <br><br>
           <small><%= fa_icon "copyright" %> 2017 qushneez LLC</small>
           <br>
           <h4 class="grey">qushneez</h4>

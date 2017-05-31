@@ -7,6 +7,7 @@
 @import "variables";
 @import "font-awesome";
 @import "welcome";
+@import "shop";
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -43,6 +44,12 @@ body {
   border-color: $cranberry-neez;
   color: $cranberry-neez;
   margin-top: 7px;
+}
+
+.flash {
+  position: absolute;
+  top: 0;
+  z-index: 50;
 }
 
 .logo {
@@ -103,15 +110,38 @@ body {
 }
 
 .btn-cranberry {
-  color: $cranberry-neez;
+  color: #FFFFFF;
   border-color: $cranberry-neez;
+  background-color: $cranberry-neez;
   margin-top: 7px;
-  background-color: transparent;
 
   &:hover {
     color: #FFFFFF;
     border-color: $cranberry-neez;
     background-color: $cranberry-neez;
+  };
+
+  &:active {
+    color: #FFFFFF;
+    border-color: $cranberry-neez;
+    background-color: $cranberry-neez;
+  };
+}
+
+  .btn-cranberry-top {
+    color: #FFFFFF;
+    border-color: $cranberry-neez;
+    background-color: $cranberry-neez;
+    margin-top: 7px;
+
+  a {
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    color: #FFFFFF;
+    border-color: $cranberry-neez;
+    background-color: darken($cranberry-neez, 5%);
   };
 
   &:active {

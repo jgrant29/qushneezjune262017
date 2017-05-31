@@ -1,0 +1,31 @@
+.shop-main {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100vh;
+}
+
+.shop {
+  background-image: image_url("kid_1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.hero-title-shop {
+  color: #FFFFFF;
+  z-index: 10;
+  padding-top: 20rem;
+}
+
+.cranberry-title {
+  color: $cranberry-neez;
+}
+
+.orange-title {
+  color: $orange;
+}
+
+.blue-small {
+  color: #FFFFFF;
+  font-family: "Indie Flower", cursive;
+}

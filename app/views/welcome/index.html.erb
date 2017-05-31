@@ -17,7 +17,7 @@
             <div class="carousel-caption">
               <h1 class="caption-header-h1">Be a Kid, Just Go Play!</h1>
               <p class="caption-header-p">Crawl, Walk, Run, Jump.  Be Spontaneous!</p>
-              <button class="btn btn-lg btn-default btn-signup">Sign up for our newsletter</button>
+              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="carousel-caption">
               <h1 class="caption-header-h1">Spontaneous playwear for kids<%= fa_icon "trademark" %></h1>
               <p class="caption-header-p">because you never know when a child is going to break out into play.</p>
-              <button class="btn btn-lg btn-default btn-signup">Sign up for our newsletter</button>
+              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
             <div class="carousel-caption">
               <h1 class="caption-header-h1">Encouraging kids to explore</h1>
               <p class="caption-header-p">kids can play like kids while being protected whenever little knees can use it. </p>
-              <button class="btn btn-lg btn-default btn-signup">Sign up for our newsletter</button>
+              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
       <div class="media-heading">
         <br>
         <p class="lead white-text">qushneez is a distinctive line of activewear for babies and kids that is both stylish and protective.  We designed an everyday pant that protects the most vulnerable part of an active child, their knees.</p>
-        <button class="btn btn-lg btn-default btn-signup">Learn more</button>
+        <%= link_to "Learn more", welcome_shop_path, {class: "btn btn-lg btn-default btn-signup"} %>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@
       <div class="col-md-12 text-center">
         <h2 class="featurette-heading featurette-spontaneous">qushneez is spontaneous playwear for kids<%= fa_icon "trademark" %></h2>
         <p class="lead">qushneez was created to encourage kids to explore, play and be active, and, to empower parents to let them do it!  You never know when a child is going to break out into play.</p>
-        <button class="btn btn-lg btn-default btn-exclusive">Get exclusive offers</button>
+        <%= link_to "Get exclusive offers", welcome_shop_path, {class: "btn btn-lg btn-default btn-exclusive"} %>
       </div>
     </div>
   </div>
@@ -102,11 +102,9 @@
       <%= image_tag("pant_feature_brown.png", class: "featurette-image img-responsive center-block" )%>
     </div>
   </div>
-  <button class="btn btn-lg btn-default btn-review">It's only one step away</button>
+  <%= link_to "Start protecting them today", welcome_shop_path, {class: "btn btn-lg btn-default btn-review"} %></button>
 </div>
 <div class="featurette-divider"></div>
-
-
 
 <div id="review-area" class="container-fluid circle-review">
   <div class="review-background">
@@ -122,7 +120,7 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <p class="review-text">With qushneez we can avoid tears when they fall down and when it's time to get dressed! My daughters love them and so do I! <br>— Laura J.</p>
-                      <button class="btn btn-lg btn-default btn-review">Pre-order today</button>
+                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
                     </div>
                   </div>
                 </blockquote>
@@ -133,7 +131,7 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <p class="review-text">After having three boys who wore through many knees in their pants as toddlers, I saw these and thought Genius.  Now I have many young nieces and nephews who will be getting these as gifts! <br>— Leslie O.</p>
-                      <button class="btn btn-lg btn-default btn-review">Pre-order today</button>
+                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
                     </div>
                   </div>
                 </blockquote>
@@ -144,7 +142,7 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <p class="review-text">These pants are pure genius.  Not only did they protect my little one's knees while she was mastering crawling, the 'qush" gave her a bit of extra traction on our slick hardwood floors.  Also, the fabric is divine and it washes well and holds it's shape and color and the design is adorable. <br>— Corbie K.</p>
-                      <button class="btn btn-lg btn-default btn-review">Pre-order today</button>
+                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
                     </div>
                   </div>
                 </blockquote>
@@ -154,7 +152,7 @@
                   <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                       <p class="review-text">I love qushneez pants because they are super cute and add protection without removing fashion.  Style, comfort and cushion, the best you can ask for for your kids! <br>— Stephanie M. </p>
-                      <button class="btn btn-lg btn-default btn-review">Pre-order today</button>
+                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
                     </div>
                   </div>
                 </blockquote>
