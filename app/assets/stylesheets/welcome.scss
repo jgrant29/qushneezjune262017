@@ -58,7 +58,7 @@
 }
 
 .first-slide {
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-image: image_url("kid_1.jpeg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -71,7 +71,7 @@
 }
 
 .second-slide {
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-image: image_url("kid_7.jpg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -84,7 +84,7 @@
 }
 
 .third-slide {
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-image: image_url("kid_3.jpeg");
   background-size: cover;
   -webkit-background-size: cover;
@@ -255,7 +255,7 @@
 ------------------------- */
 
 #review-area {
-  background-attachment:fixed;
+  background-attachment:scroll;
   background-image: image_url("kid_1.jpeg");
   background-size: cover;
   -webkit-background-size: cover;
