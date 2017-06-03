@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag('favicon.ico') %>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -49,30 +49,24 @@
     <%= yield %>
   <footer>
     <div class="container-fluid footer-background grey">
+      <hr>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <p class="text-center">Questions?  We are here for you.</p>
-            <hr>
             <address>
               <strong>qushneez, LLC.</strong><br>
               <%= fa_icon "map-marker" %>San Francisco, CA<br>
-              <%= fa_icon "phone" %>  (415) 269-8921
             </address>
             <address>
             <strong>Samantha Ford</strong><br>
-            <a href="mailto:samstevens@msn.com">samstevens@msn.com</a>
+            <a href="mailto:samstevens@msn.com">info@qushneez.com</a>
           </address>
           <%= fa_icon "cc-visa 2x", class: "grey" %> <%= fa_icon "cc-mastercard 2x", class: "grey" %> <%= fa_icon "cc-discover 2x", class: "grey" %> <%= fa_icon "cc-amex 2x", class: "grey" %>
           </div>
           <div class="col-md-4">
-            <p class="text-center">Our Story</p>
-            <hr>
-            <p>We are blessed to be living and raising our children in Northern California.  We live close to the beach, the mountains for skiing, and are surrounded by beautiful trails where we love to hike and bike.  I’d say we are a pretty active family. We love to spend time outdoors and from the earliest of ages we encouraged our little boy to be active with us.  One of our favorite activities was hiking. While our outings were always fun, filled with lots of adventure, inevitably, our little boy would trip and fall, skin his knees, he would start crying and then want to head back home.  Adventure over! Same thing when we’d be playing and running around at the park.  Trip-fall-tears-repeat.  <%= link_to "More about our story", welcome_about_path %></p>
+            <p class="text-center"></p>
           </div>
           <div class="col-md-4">
-            <p class="text-center">Sign up!</p>
-            <hr>
             <h4 class="orange">get instant updates about our new products and special promos!</h4>
             <div class="navbar-form navbar-left">
               <%= render "/email_sign_ups/remote_form" %>
@@ -81,17 +75,23 @@
           </div>
         </div>
       </div>
-      <hr>
       <div class="container grey text-center">
         <div class="col-md-12 line">
-          <h4 class="handwritting maroon">Follow us!</h4>
-          <span><%= fa_icon "facebook 2x", class: "maroon social-padding" %> <%= fa_icon "instagram 2x", class: "maroon social-padding" %><span>
+          <div><%= fa_icon "facebook 2x", class: "maroon social-padding" %><%= fa_icon "instagram 2x", class: "maroon social-padding" %><div>
           <br><br>
-          <small><%= fa_icon "copyright" %> 2017 qushneez LLC</small>
-          <br>
-          <h4 class="grey">qushneez</h4>
-          <small>spontaneous playwear for kids<%= fa_icon "trademark" %></small>
-          <br>
+        </div>
+      </div>
+      <div class="container grey text-center">
+        <div class="row">
+          <div class="col-md-4">
+            <small><%= fa_icon "copyright" %> 2017 qushneez LLC</small>
+          </div>
+          <div class="col-md-4">
+            <small>qushneez</small>
+          </div>
+          <div class="col-md-4">
+            <small>spontaneous playwear for kids<%= fa_icon "trademark" %></small>
+          </div>
         </div>
       </div>
     </div>

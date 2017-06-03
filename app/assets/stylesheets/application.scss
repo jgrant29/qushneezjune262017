@@ -13,7 +13,13 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html {
+}
+
 body {
+  border-right: 2px solid $orange;
+  border-left: 2px solid $orange;
+  margin-top:64px;
   color: #5a5a5a;
 }
 
@@ -24,8 +30,8 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 .navbar-default {
-    background-color: rgba(255, 255, 255, .7);
-    border-color: $orange !important;
+  background-color: #f9f9f9;
+  border-color: $orange !important;
 }
 
 .navbar-default .navbar-nav > li > a {

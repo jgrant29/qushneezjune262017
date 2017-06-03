@@ -9,15 +9,14 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner carousel-inner-height" role="listbox">
         <div class="item active">
-          <div class="first-slide"></div>
+          <div class="active-slide"></div>
           <div class="container">
             <div class="carousel-caption">
-              <h1 class="caption-header-h1">Be a Kid, Just Go Play!</h1>
-              <p class="caption-header-p">Crawl, Walk, Run, Jump.  Be Spontaneous!</p>
-              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
+              <h1 class="caption-header-h1">hard surfaces feels as comfortable as carpet</h1>
             </div>
           </div>
         </div>
@@ -25,9 +24,15 @@
           <div class="second-slide"></div>
           <div class="container">
             <div class="carousel-caption">
-              <h1 class="caption-header-h1">Spontaneous playwear for kids<%= fa_icon "trademark" %></h1>
-              <p class="caption-header-p">because you never know when a child is going to break out into play.</p>
-              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
+              <h1 class="caption-header-h1">get out and explore</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="first-slide"></div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="caption-header-h1">look fashionable and protect your knees at the same time</h1>
             </div>
           </div>
         </div>
@@ -35,9 +40,7 @@
           <div class="third-slide"></div>
           <div class="container">
             <div class="carousel-caption">
-              <h1 class="caption-header-h1">Encouraging kids to explore</h1>
-              <p class="caption-header-p">kids can play like kids while being protected whenever little knees can use it. </p>
-              <button class="btn btn-lg btn-default btn-signup"><%= link_to "Sign up for our newsletter", welcome_shop_path %></button>
+              <h1 class="caption-header-h1">encouraging spontaneous play</h1>
             </div>
           </div>
         </div>
@@ -45,14 +48,15 @@
     </div><!-- /.carousel -->
 
 <div class="container-fluid cranberry-background">
-  <!-- circle bullet thirds marketing -->
-  <div class="selling-points row">
-    <div class="col-xs-12 text-center">
-      <h1 class="handwritting orange">Crawling your way soon!</h1>
-      <div class="media-heading">
-        <br>
-        <p class="lead white-text">qushneez is a distinctive line of activewear for babies and kids that is both stylish and protective.  We designed an everyday pant that protects the most vulnerable part of an active child, their knees.</p>
-        <%= link_to "Learn more", welcome_shop_path, {class: "btn btn-lg btn-default btn-signup"} %>
+  <div class="container">
+    <!-- circle bullet thirds marketing -->
+    <div class="selling-points row">
+      <div class="col-xs-12 text-center">
+        <h1 class="handwritting orange">crawling your way fall of 2017!</h1>
+        <div class="media-heading">
+          <br>
+          <p class="lead white-text">qushneez is a distinctive line of activewear for babies and kids that is both stylish and protective.  We designed an everyday pant that protects the most vulnerable part of an active child, their knees.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -86,7 +90,6 @@
       <div class="col-md-12 text-center">
         <h2 class="featurette-heading featurette-spontaneous">qushneez is spontaneous playwear for kids<%= fa_icon "trademark" %></h2>
         <p class="lead">qushneez was created to encourage kids to explore, play and be active, and, to empower parents to let them do it!  You never know when a child is going to break out into play.</p>
-        <%= link_to "Get exclusive offers", welcome_shop_path, {class: "btn btn-lg btn-default btn-exclusive"} %>
       </div>
     </div>
   </div>
@@ -96,75 +99,72 @@
   <div class="row featurette featurette-padding">
     <div class="col-md-7">
       <h2 class="featurette-heading featurette-heading-2">Fashion with a purpose. <span class="featurette-heading-second">For girls and boys.</span></h2>
-      <p class="lead">A distinctive line of activewear for babies and kids that is both stylish and protective.  We designed an everyday pant that protects the most vulnerable part of an active child, their knees.</p>
+      <p class="lead">we want to encourage children to be active at a young age and enjoy the new pleasures of independent exploring by helping protect little knees.</p>
     </div>
     <div class="col-md-5">
-      <%= image_tag("pant_feature_brown.png", class: "featurette-image img-responsive center-block" )%>
+      <%= image_tag("pant_feature.png", class: "featurette-image img-responsive center-block" )%>
     </div>
   </div>
-  <%= link_to "Start protecting them today", welcome_shop_path, {class: "btn btn-lg btn-default btn-review"} %></button>
 </div>
 <div class="featurette-divider"></div>
-
-<div id="review-area" class="container-fluid circle-review">
-  <div class="review-background">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-            <!-- Carousel Slides / Quotes -->
-            <div class="carousel-inner carousel-inner-review text-center">
-              <!-- Quote 1 -->
-              <div class="item active">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <p class="review-text">With qushneez we can avoid tears when they fall down and when it's time to get dressed! My daughters love them and so do I! <br>— Laura J.</p>
-                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
+<div class="container-fluid review-hero">
+  <div id="review-area" class="circle-review">
+    <div class="review-background">
+      <div class="text-center">
+        <div class="row">
+          <h1>happy customers say</h1>
+          <div class="col-md-12">
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+              <!-- Carousel Slides / Quotes -->
+              <div class="carousel-inner carousel-inner-review text-center">
+                <!-- Quote 1 -->
+                <div class="item active">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-2">
+                        <p class="review-text">With qushneez we can avoid tears when they fall down and when it's time to get dressed! My daughters love them and so do I! <br>— Laura J.</p>
+                      </div>
                     </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!-- Quote 2 -->
-              <div class="item">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <p class="review-text">After having three boys who wore through many knees in their pants as toddlers, I saw these and thought Genius.  Now I have many young nieces and nephews who will be getting these as gifts! <br>— Leslie O.</p>
-                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
+                  </blockquote>
+                </div>
+                <!-- Quote 2 -->
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-2">
+                        <p class="review-text">After having three boys who wore through many knees in their pants as toddlers, I saw these and thought Genius.  Now I have many young nieces and nephews who will be getting these as gifts! <br>— Leslie O.</p>
+                      </div>
                     </div>
-                  </div>
-                </blockquote>
-              </div>
-              <!-- Quote 3 -->
-              <div class="item">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <p class="review-text">These pants are pure genius.  Not only did they protect my little one's knees while she was mastering crawling, the 'qush" gave her a bit of extra traction on our slick hardwood floors.  Also, the fabric is divine and it washes well and holds it's shape and color and the design is adorable. <br>— Corbie K.</p>
-                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
+                  </blockquote>
+                </div>
+                <!-- Quote 3 -->
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-2">
+                        <p class="review-text">These pants are pure genius.  Not only did they protect my little one's knees while she was mastering crawling, the 'qush' gave her a bit of extra traction on our slick hardwood floors.  Also, the fabric is divine and it washes well and holds it's shape and color and the design is adorable. <br>— Corbie K.</p>
+                      </div>
                     </div>
-                  </div>
-                </blockquote>
-              </div>
-              <div class="item">
-                <blockquote>
-                  <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                      <p class="review-text">I love qushneez pants because they are super cute and add protection without removing fashion.  Style, comfort and cushion, the best you can ask for for your kids! <br>— Stephanie M. </p>
-                      <%= link_to "Pre-order today", welcome_shop_path, {class: "btn btn-lg btn-default btn-pre-order"} %>
+                  </blockquote>
+                </div>
+                <div class="item">
+                  <blockquote>
+                    <div class="row">
+                      <div class="col-sm-8 col-sm-offset-2">
+                        <p class="lead review-text">I love qushneez pants because they are super cute and add protection without removing fashion.  Style, comfort and cushion, the best you can ask for for your kids! <br>— Stephanie M. </p>
+                      </div>
                     </div>
-                  </div>
-                </blockquote>
+                  </blockquote>
+                </div>
               </div>
+              <!-- Bottom Carousel Indicators -->
+             <!--  <ol class="carousel-indicators carousel-indicators-2">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                <li data-target="#quote-carousel" data-slide-to="2"></li>
+                <li data-target="#quote-carousel" data-slide-to="3"></li>
+              </ol> -->
             </div>
-            <!-- Bottom Carousel Indicators -->
-           <!--  <ol class="carousel-indicators carousel-indicators-2">
-              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#quote-carousel" data-slide-to="1"></li>
-              <li data-target="#quote-carousel" data-slide-to="2"></li>
-              <li data-target="#quote-carousel" data-slide-to="3"></li>
-            </ol> -->
           </div>
         </div>
       </div>

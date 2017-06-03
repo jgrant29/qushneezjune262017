@@ -4,11 +4,12 @@
 
 /* Carousel base class */
 .carousel-height {
-  height: 550px;
+  background-color: $cranberry-neez;
+  height: 900px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 150px !important;
+  bottom: 300px !important;
   z-index: 10;
   font-family: 'Indie Flower', cursive;
 }
@@ -26,7 +27,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-height .item {
-  height: 550px;
+  height: 900px;
 }
 .carousel-inner > .item > img {
   object-fit: cover;
@@ -34,7 +35,7 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 550px;
+  height: 900px;
 }
 
 .carousel-indicators li {
@@ -57,6 +58,20 @@
   min-height: 400px;
 }
 
+.active-slide {
+  background-attachment:scroll;
+  background-image: image_url("kid_2.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  max-width: 920px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%;
+}
+
 .first-slide {
   background-attachment:scroll;
   background-image: image_url("kid_1.jpeg");
@@ -64,10 +79,11 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  max-width: 920px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .second-slide {
@@ -77,10 +93,11 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  max-width: 920px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .third-slide {
@@ -90,10 +107,11 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  max-width: 920px;
+  margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 
@@ -253,7 +271,9 @@
 
 /* Featurettes
 ------------------------- */
-
+.review-hero {
+  background-color: darken($cranberry-neez, 13%);
+}
 #review-area {
   background-attachment:scroll;
   background-image: image_url("kid_1.jpeg");
@@ -261,7 +281,10 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center bottom;
+  max-width: 920px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center top;
   height: 100%;
 }
 
@@ -276,9 +299,8 @@
 }
 
 .review-background {
-  margin-left: -15px;
-  margin-right: -15px;
-  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 6rem;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .featurette-divider {
   padding: 80px 0;
@@ -296,6 +318,7 @@
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  color: $orange;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
@@ -337,8 +360,7 @@
 }
 
 .orange-featurette {
-  background-color: #0F6F7D;
-  color: #11DEFC;
+  background-color: #ddd;
   padding-bottom: 10rem;
 }
 
@@ -351,17 +373,13 @@
   font-family: 'Indie Flower', cursive;
 }
 
-.featurette-spontaneous {
-  color: #ffffff;
-}
-
 .maroon {
   color: $cranberry-neez;
 }
 
 .cranberry-background {
   padding-top: 30px;
-  height: 400px;
+  height: 280px;
   background-color: $cranberry-neez;
 }
 
