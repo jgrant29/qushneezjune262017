@@ -6,7 +6,7 @@ if Rails.env.development? || Rails.env.production?
     authentication:  :plain,
     user_name:       'apikey',
     password:        ENV['sendgrid_apy_key'],
-    domain:          'qushneez.com',
+    domain:          'www.qushneez.com',
     enable_starttls_auto: true
   }
 end
