@@ -15,12 +15,13 @@ class EmailSignUpsController < ApplicationController
   # POST /email_sign_ups.json
   def create
     @email_sign_up = EmailSignUp.new(email_sign_up_params)
+    @email = EmailSignUp.find_by(params[:email_sign_up_id])
 
     respond_to do |format|
       if @email_sign_up.save
         format.json { render :show, status: :created, location: @email_sign_up }
-        CrawlingSoonMailer.qushneez_email_notification(@email_sign_up).deliver_now
         format.js   {flash[:notice] = "Thanks for signing up!  Check your email for updates."}
+        CrawlingSoonMailer.qushneez_email_notification(@email).deliver_now
       else
         format.html { render :new }
         format.json { render json: @email_sign_up.errors, status: :unprocessable_entity }
