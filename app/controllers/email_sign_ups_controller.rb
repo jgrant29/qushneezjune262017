@@ -1,22 +1,11 @@
 class EmailSignUpsController < ApplicationController
   before_action :set_email_sign_up, only: [:show, :edit, :update, :destroy]
 
-  # GET /email_sign_ups
-  # GET /email_sign_ups.json
-
-  # GET /email_sign_ups/1
-  # GET /email_sign_ups/1.json
-
-  # GET /email_sign_ups/new
-
-  # GET /email_sign_ups/1/edit
-
   # POST /email_sign_ups
   # POST /email_sign_ups.json
   def create
     @email_sign_up = EmailSignUp.new(email_sign_up_params)
     @email = EmailSignUp.find_by(params[:email_sign_up_id])
-
     respond_to do |format|
       if @email_sign_up.save
         CrawlingSoonMailer.qushneez_email_notification(@email_sign_up).deliver_now

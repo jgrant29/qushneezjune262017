@@ -4,9 +4,9 @@ if Rails.env.development? || Rails.env.production?
     address:         'smtp.sendgrid.net',
     port:            '587',
     authentication:  :plain,
-    user_name:       'apikey',
-    password:        ENV['sendgrid_apy_key'],
-    domain:          'www.qushneez.com',
+    user_name:       ENV['SENDGRID_USERNAME'],
+    password:        ENV['SENDGRID_PASSWORD'],
+    domain:          'qushneez.com',
     enable_starttls_auto: true
   }
 end
